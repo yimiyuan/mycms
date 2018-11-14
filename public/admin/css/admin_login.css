@@ -1,0 +1,32 @@
+/*------------start 后台管理登陆样式--------------------------------*/
+*{margin:0;padding:0;
+}
+body{background:#f7f7f7;
+}
+.admin_login{border:0px solid #F00;width:490px;height:310px;position:absolute;top:50%;left:50%;margin-left:-245px;/*margin-top:-155px;*/margin-top:-185px;
+background:url(../images/login.jpg) no-repeat 0 0;
+}
+.login_left{border:0px solid #F00;position: absolute;width: 200px;height: 115px;left: 135px;top: 105px
+}
+.login_left .username{margin-top:3px;padding-left:2px;
+}
+.login_left .username input{height: 22px;border:0;width: 165px;margin-left:18px;
+}
+.login_left .password{padding-left:2px;margin-top: 22px;
+}
+.login_left .password input{height: 20px;border:0;width: 165px;height:17px\9;margin-left:18px;
+}
+.checkcode{display:block;
+}
+.checkcode .code_input{float:left;margin-top:20px;height:22px;padding-left:2px;margin-top:24px\9;
+}
+.checkcode .code_input input{height: 22px;width: 89px;border:0;height:15px\9;margin-left:18px;margin-top:2px;
+}
+.checkcode .code_img{float:right;margin-top:20px;width: 75px;height: 25px;overflow: hidden;cursor:pointer;margin-right:10px;
+}
+.login_right{border:0px solid #F00;position: absolute;width: 80px;height: 75px;left: 350px;top: 105px;cursor:pointer;
+}
+.error_message{position: absolute;bottom: 25px;width: 100%;text-align: center;font-family: "微软雅黑";
+    font-size: 14px;color: #F00;
+}
+/*------------end 后台管理登陆样式----------------------------------*/

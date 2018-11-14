@@ -1,0 +1,77 @@
+/*--------go 通用样式----------------*/
+*{margin:0;padding:0;font-size:12px;
+}
+body{border:0px solid #F00;overflow:hidden;background:#F7FBFC;overflow-y:auto;
+}
+ul,li{list-style:none;
+}
+a{text-decoration:none;outline:none;
+}
+input{height:19px;
+}
+select{height:21px;
+}
+input.file{height:25px;margin-top:3px;
+}
+input.button{height:20px;padding-left:7px;padding-right:6px;letter-spacing:0.2em;cursor:pointer;
+}
+input.width_200{width:200px;
+}
+input.width_300{width:300px;
+}
+table{border-collapse:collapse;
+}
+td.td_60{width:60px;
+}
+td.td_110{width:110px;
+}
+td.td_100{width:100px;
+}
+td.td_300{width:300px;
+}
+td.pd_5{padding-top:5px;
+}
+td.center{text-align:center;font-size:14px;
+}
+div.sys_exit{margin-top:150px;float:left;margin-left:20px;background:url(../images/admin_img/exit.png) no-repeat;border:0px solid #F00;height:20px;width:40px;
+padding-left:26px;
+}
+div.sys_exit a{font-family:"微软雅黑";color:#000;font-size:14px;
+}
+td.add_left{padding-left:27px;width:80px;
+}
+input.short_bt{background:url(../images/button_bg.jpg) 0 0 no-repeat;width:60px;height:23px;border:0;color:#FFF;letter-spacing:2px;
+}
+/*--------end 通用样式----------------*/
+
+/*------------ go    left_menu-----------------------*/
+.left_menu{position:relative;padding-left:10px;width:124px;height:100%;border-right: 1px solid #bbb;float:left;background:#F7FBFC;display:none;
+}
+.left_menu ul li.title_hover{border:0px solid #F00;background:url(../images/admin_img/left_menu.png) 0 0 no-repeat;height:29px;
+}
+.left_menu ul li.title_hover a{margin-left:20px;padding-top:3px;
+}
+.left_menu .menu_title{font-weight:700;color:#275d96;border-bottom:1px solid #bbb;line-height:33px;height:30px;margin-bottom: 5px;
+font-size:14px;position:relative;
+}
+.left_menu .menu_title span{border:0px solid #F00;display:block;background:url(../images/admin_img/left_menu.png) 0 -73px no-repeat;
+width:25px;height:20px;position:absolute;top:5px;right:10px;
+}
+.left_menu ul{
+}
+.left_menu ul li{line-height:25px;
+}
+.left_menu ul li a{display:block;color:#000;height:20px;margin-left:15px;width:100px;overflow:hidden;
+}
+/*------------ end    left_menu-----------------------*/
+
+/*---------------------go right_content----------------------------*/
+.main .right_content{border:0px solid #F00;margin-left:136px;height:100%;
+}
+.user_nav{border:0px solid #F00;height:30px;background:#E2E9EA url(../images/admin_img/icon_use.png) 10px -17px no-repeat;
+}
+.your_pos{border:0px solid #F00;display:inline-block;width:55px;height:20px;margin-left:30px;margin-top:10px;
+}
+.con_manager{border-top:1px solid #bbb;border-left:1px solid #bbb;height:100%;background:#FFF;position: relative;left: -2px;
+}
+/*---------------------end right_content----------------------------*/

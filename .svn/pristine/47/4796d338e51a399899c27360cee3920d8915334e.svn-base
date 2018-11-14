@@ -1,0 +1,72 @@
+<?php
+namespace model;
+use think\Exception;
+/**
+ * @author jimliu
+ * @date 20170609
+ * 单例模式,pdo方式操作数据库,调用方式 : $mysql = mysql::getInstance();
+ */
+class Mysql{
+    public static $_instance;   /**当前类实例*/
+    public $db = null;
+    public $config = array();
+
+    /**
+     * 初始化获取数据库连接
+     */
+    public function __construct(){
+        $this->getConfig();
+        $this->getConnect();
+    }
+
+    /**
+     * 功能: 获取数据库配置信息
+     */
+    public function getConfig(){
+        $this->config = require API . DS . 'database.php';
+    }
+
+    /**
+     * 得到数据库连接信息
+     */
+    public function getConnect(){
+        $changDb = 'mysql:host='.$this->config['host'].';port='.$this->config['port'].';dbname='.$this->config['database'];
+        try{
+            $this->db = new \PDO($changDb , $this->config['username'] , $this->config['password']);
+            $this->db->query("set names utf8");
+            $this->db->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE,\PDO::FETCH_ASSOC);
+        }
+        catch(PDOException $e){
+            echo 'Error!: ' . $e->getMessage() . "<br/>";
+            die();
+        }
+    }
+
+    /**
+     * @return 单列模式,判断是否实例化mysql类
+     */
+    public static function getInstance(){
+        if(!(self::$_instance instanceof self)){
+            self::$_instance = new self;
+        }
+        return self::$_instance;
+    }
+
+    /**
+     * @param $sql 执行sql原始语句查询
+     * @return 返回查询结果集,类型为数组;
+     */
+    public function query($sql){
+        $return = array();
+        foreach($this->db->query($sql) as $key=>$value){
+            $return[$key] = $value;
+        }
+        return $return;
+    }
+
+
+
+
+
+}
+

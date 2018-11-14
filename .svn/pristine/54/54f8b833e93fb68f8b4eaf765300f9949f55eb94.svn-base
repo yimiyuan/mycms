@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>产品详细信息</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/product_detail.css" />
+</head>
+<body style="overflow:auto;">
+<!--go 修改信息层 -->
+<div class="product_edit product_detail">
+	<form action="" method="post">
+        <table>
+            <tr><td colspan="2" class="center">产品信息编辑</td></tr>
+            <tr><td>商品编号:</td><td><input class="width_200" type="text" value="0808008"/></td></tr>
+            <tr><td>商品名称:</td><td><input class="width_200" type="text" value="OO眼保仪"/></td></tr>
+            <tr><td>商品总数:</td><td><input class="width_200" type="text" value="1000"/></td></tr>
+            <tr><td>销量:</td><td><input class="width_200" type="text" value="200"/></td></tr>
+            <tr><td>库存:</td><td><input class="width_200" type="text" value="800"/></td></tr>
+            <tr><td>图片:</td><td><img src="images/product_img/eyetest1.jpg" /><a href="#">删除</a></td></tr>
+            <tr><td>上传图片1:</td><td><input class="file" type="file" value="浏览"/></td></tr>
+            <tr><td>上传图片2:</td><td><input class="file" type="file" value="浏览"/></td></tr>
+            <tr><td>原价:</td><td><input class="width_200" type="text" value="250.00"/></td></tr>
+            <tr><td>促销价:</td><td><input class="width_200" type="text" value="200.00"/></td></tr>
+            <tr><td>商品浏览次数:</td><td><input class="width_200" type="text" value="53"/></td></tr>
+            <tr><td>颜色:</td><td><input class="width_200" type="text" value="黑色"/></td></tr>
+            <tr><td>型号:</td><td><input class="width_200" type="text" value="SU-002"/></td></tr>
+            <tr><td>产品介绍:</td><td><textarea>
+            产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍
+            产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍
+            产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍
+            产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍
+            </textarea></td></tr>
+            <tr><td>视频:</td><td><video src="http://www.tudou.com/programs/view/44jtFFlHkIE">您的浏览器不支持 video 标签。</video><a href="#">删除</a></td></tr>
+            <tr><td>上传视频:</td><td><input class="file" type="file" value="浏览"/></td></tr>  
+            <tr><td><input class="short_bt" type="submit" value="提交"/></td><td></td></tr>
+        </table>
+    </form>
+</div>
+<!--end 修改信息层 -->
+</body>
+</html>

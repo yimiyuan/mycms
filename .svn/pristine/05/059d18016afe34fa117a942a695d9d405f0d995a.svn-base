@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>订单信息修改</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/product_detail.css" />
+</head>
+<body>
+<!--go 修改信息层 -->
+<div class="product_edit product_detail">
+	<form action="" method="post">
+        <table>
+            <tr><td colspan="2" class="center">订单信息编辑</td></tr>
+            <tr><td>订单编号:</td><td><input class="width_200" type="text" value="SVN5001343243243"/></td></tr>
+            <tr><td>产品名称:</td><td><input class="width_200" type="text" value="OO眼保仪"/></td></tr>
+            <tr><td>用户名:</td><td><input class="width_200" type="text" value="Jim Lee"/></td></tr>
+            <tr><td>收货人:</td><td><input class="width_200" type="text" value="李强"/></td></tr>
+            <tr><td>订单金额:</td><td><input class="width_200" type="text" value="200.00"/></td></tr>
+            <tr><td>产品图片:</td><td><img src="images/product_img/eyetest1.jpg" /></td></tr>
+            <tr><td>支付方式:</td><td><input class="width_200" type="text" value="支付宝"/></td></tr>
+            <tr><td>订单状态:</td><td><input class="width_200" type="text" value="等待付款"/></td></tr>
+            <tr><td><input class="short_bt" type="submit" value="提交"/></td><td></td></tr>
+        </table>
+    </form>
+</div>
+<!--end 修改信息层 -->
+</body>
+</html>

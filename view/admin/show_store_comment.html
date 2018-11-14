@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>店铺评论管理</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/show_product.css" />
+</head>
+<body>
+<!------------- go 右边主体层 ------------------>
+<div class="right_content">
+	<!---go 标题------>
+    <div class="user_nav">
+        <span class="your_pos">当前位置:</span>
+        <span>>&nbsp;店铺评论管理</span>
+    </div>
+    <!---end 标题------>
+    <!---go 列表层------>
+    <div class="con_manager" id="con_manager">
+        <div class="show_product">
+        	<div class="search_box">
+            	<!---go 查询层------>
+                <div class="pro_search">
+                	<div class="pro_brand">
+                        店铺名称&nbsp;<input type="text" />
+                    </div>
+                    <div class="pro_name">
+                    	评论日期&nbsp;<input type="text" /> 
+                    </div>
+                    <div><input class="short_bt" type="submit" value="查询"/></div>
+                </div>
+                 <!---end 查询层------>    
+                 <div class="pro_list">
+                    <table>
+                        <tr class="tr_title"><td style="width:35%;">店铺名称</td><td>评论人</td><td>评论日期</td>
+                        <td class="td_110">操作</td></tr>
+                        <script type="text/javascript">
+						for (var i=0;i<15;i++)
+						{
+							if(i%2==1)
+							{
+								document.write('<tr style="background:#DDD;"><td>福州国信大利嘉A1－107店</td><td>小张</td><td>2014-06-08</td>'+
+                        '<td><a class="p_detail"  href="store_comment_detail.html" >详细</a><a class="p_edit" href="store_comment_edit.html"  >编辑</a><a class="p_del" href="#">删除</a></td></tr>');	
+							}
+							else
+							{
+								document.write('<tr><td>福州国信大利嘉A1－107店</td><td>小张</td><td>2014-06-08</td>'+
+                        '<td><a class="p_detail"  href="store_comment_detail.html" >详细</a><a class="p_edit" href="store_comment_edit.html"  >编辑</a><a class="p_del" href="#">删除</a></td></tr>');	
+							}	
+						}
+						</script>
+                        <tr><td colspan="10" class="page_search"><span>分页查询</span>
+                        <span><select id=""><option>1</option><option>2</option><option>3</option></select></span>
+                        <span><a href="#">前往</a></span></td></tr>
+                    </table>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <!---end 列表层----->
+</div>
+<!------------- end 右边主体层 ------------------>
+</body>
+</html>

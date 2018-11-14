@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>预约详细信息</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/product_detail.css" />
+</head>
+<body>
+<!--go 详细信息层 -->                 
+    <div class="product_detail">
+    <form action="" method="post">
+        <table>
+            <tr><td colspan="2" class="center">预约详细信息</td></tr>
+            <tr><td class="td_100">预约编号:</td><td>500212154</td></tr>
+            <tr><td>预约人:</td><td>小强</td></tr>
+            <tr><td>预约时间:</td><td>2014-02-01</td></tr>
+            <tr><td>预约状态:</td><td>预约成功</td></tr>
+            <tr><td>店铺图片:</td><td><img src="images/product_img/eyetest1.jpg" /></td></tr>
+        </table>
+    </form>
+</div>
+<!--end 详细信息层 -->
+</body>
+</html>

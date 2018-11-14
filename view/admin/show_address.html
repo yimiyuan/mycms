@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>收货地址管理</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/show_product.css" />
+</head>
+<body>
+<!------------- go 右边主体层 ------------------>
+<div class="right_content">
+	<!---go 标题------>
+    <div class="user_nav">
+        <span class="your_pos">当前位置:</span>
+        <span>>&nbsp;收货地址管理</span>
+    </div>
+    <!---end 标题------>
+    <!---go 列表层------>
+    <div class="con_manager" id="con_manager">
+        <div class="show_product">
+        	<div class="search_box">
+            	<!---go 查询层------>
+                <div class="pro_search">
+                	<div class="pro_brand">
+                        收货人姓名&nbsp; <input type="text" /> 
+                    </div>
+                    <div><input class="short_bt" type="submit" value="查询"/></div>
+                </div>
+                 <!---end 查询层------>    
+                 <div class="pro_list">
+                    <table>
+                        <tr class="tr_title"><td>收货人姓名</td><td>收货人地址</td><td>联系方式</td><td>所在城市</td><td>所在区/县</td><td>邮政编码</td>
+                        <td class="td_110">操作</td></tr>
+                        <script type="text/javascript">
+						for (var i=0;i<15;i++)
+						{
+							if(i%2==1)
+							{
+								document.write('<tr style="background:#DDD;"><td>李强</td><td>四川省成都市青羊区宁夏街111号</td><td>158742587542</td><td>成都市</td><td>青羊区</td><td>641421</td>'+
+                        '<td><a class="p_detail"  href="address_detail.html">详细</a><a class="p_edit" href="address_edit.html">编辑</a><a class="p_del" href="#">删除</a></td></tr>');	
+							}
+							else
+							{
+								document.write('<tr><td>李强</td><td>四川省成都市青羊区宁夏街111号</td><td>158742587542</td><td>成都市</td><td>青羊区</td><td>641421</td>'+
+                        '<td><a class="p_detail"  href="address_detail.html">详细</a><a class="p_edit" href="address_edit.html">编辑</a><a class="p_del" href="#">删除</a></td></tr>');	
+							}	
+						}
+						</script>
+                        <tr><td colspan="10" class="page_search"><span>分页查询</span>
+                        <span><select id=""><option>1</option><option>2</option><option>3</option></select></span>
+                        <span><a href="#">前往</a></span></td></tr>
+                    </table>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <!---end 列表层----->
+</div>
+<!------------- end 右边主体层 ------------------>
+</body>
+</html>

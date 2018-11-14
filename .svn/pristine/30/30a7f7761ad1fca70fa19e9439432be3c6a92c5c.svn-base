@@ -1,0 +1,34 @@
+<?php
+/**
+ * 控制器父类,负责页面显示跳转
+ */
+namespace model;
+class Controller{
+
+    /**
+     * @var 模板对象Template
+     */
+    private $template = null;
+
+    /**
+     * @param $view
+     * 功能 : 显示视图
+     */
+    public function display($view){
+        $this->template = Init::instance('Template');
+        $this->template->display($view);
+    }
+
+    /**
+     * @param $tpl_var
+     * @param null $value
+     * 功能 : 模板变量赋值
+     */
+    public function assign($tpl_var , $value = null){
+        $this->template = Init::instance('Template');
+        $this->template->assign($tpl_var , $value);
+    }
+
+
+
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>爱眼视频信息编辑</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/product_detail.css" />
+</head>
+<body>
+
+<!-----------go 爱眼视频信息编辑-------------------------->
+<div class="product_detail">
+    <form action="" method="post">
+        <table>
+            <tr><td colspan="2" class="center">爱眼视频编辑</td></tr>
+            <tr><td>视频标题:</td><td><input class="width_200" type="text" value="少儿近视多半为假性近视" /></td></tr>
+            <tr><td>视频内容:</td><td><textarea>
+            如果看到一个3、4岁的小孩鼻梁上顶着一副眼镜，大多数人也不觉得奇怪，因为社会上，越来越多的小孩戴着眼镜，
+            因为用眼过度，过多使用电子产品，使少儿的视力急速下降，但是，少儿近视多半为假性近视，所以，在发现假性近视时，应及时配合治疗，防止
+            其演变为真性近视。
+            </textarea>
+            </td></tr>
+            <tr><td>发布日期:</td><td><input type="text" value="2014-02-01" /></td></tr>
+            <tr><td>视频:</td><td><video src="somevideo.wmv"></video><a href="#">删除</a></td></tr>
+            <tr><td>上传视频：</td><td><input type="file" class="file" value="浏览" /></td></tr>
+            <tr><td><input class="short_bt" type="submit" value="提交" /></td><td></td></tr>
+        </table>
+    </form>
+</div>
+<!-----------end 爱眼视频信息编辑------------------------->
+
+</body>
+</html>

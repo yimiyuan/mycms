@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>购物车管理</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/show_product.css" />
+</head>
+<body>
+<!------------- go 右边主体层 ------------------>
+<div class="right_content">
+	<!---go 标题------>
+    <div class="user_nav">
+        <span class="your_pos">当前位置:</span>
+        <span>>&nbsp;购物车管理</span>
+    </div>
+    <!---end 标题------>
+    <!---go 列表层------>
+    <div class="con_manager" id="con_manager">
+        <div class="show_product">
+        	<div class="search_box">
+            	<!---go 查询层------>
+                <div class="pro_search">
+                	<div class="pro_brand">
+                        用户名&nbsp;<input type="text" /> 
+                    </div>
+                    <div>
+                        订单编号&nbsp;<input type="text" /> 
+                    </div>
+                    <div><input class="short_bt" type="submit" value="查询"/></div>
+                </div>
+                 <!---end 查询层------>    
+                 <div class="pro_list">
+                    <table>
+                        <tr class="tr_title"><td>用户名</td><td>订单编号</td><td>产品名称</td><td>订单状态</td><td>收货人</td><td>订单金额</td>
+                        <td>付款方式</td><td class="td_110">操作</td></tr> 
+                        <script type="text/javascript">
+						for (var i=0;i<15;i++)
+						{
+							if(i%2==1)
+							{
+								document.write('<tr style="background:#DDD;"><td>Jim lee</td><td>VN12232132</td><td>眼保仪</td><td>等待付款</td>'+
+								'<td>李强</td><td>125.00</td><td>支付宝</td>'+
+                        '<td><a class="p_edit" href="car_detail.html">详情</a><a class="p_edit" href="car_edit.html">编辑</a><a class="p_del" href="#">删除</a></td></tr>');	
+							}
+							else
+							{
+									document.write('<tr><td>Jim lee</td><td>VN12232132</td><td>眼保仪</td><td>等待付款</td>'+
+								'<td>李强</td><td>125.00</td><td>支付宝</td>'+
+                        '<td><a class="p_edit" href="car_detail.html">详情</a><a class="p_edit" href="car_edit.html">编辑</a><a class="p_del" href="#">删除</a></td></tr>');	
+							}	
+						}
+						</script>
+                        <tr><td colspan="10" class="page_search"><span>分页查询</span>
+                        <span><select id=""><option>1</option><option>2</option><option>3</option></select></span>
+                        <span><a href="#">前往</a></span></td></tr>
+                    </table>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <!---end 列表层----->
+</div>
+<!------------- end 右边主体层 ------------------>
+</body>
+</html>

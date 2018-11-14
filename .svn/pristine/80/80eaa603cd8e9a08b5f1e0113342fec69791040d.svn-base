@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>商家详细信息</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/product_detail.css" />
+</head>
+<body>
+<!--go 详细信息层 -->
+    <div class="product_detail">
+    <form action="" method="post">
+        <table>
+            <tr><td colspan="2" class="center">商家详细信息</td></tr>
+            <tr><td>商家姓名:</td><td>李得刚</td></tr>
+            <tr><td>联系方式:</td><td>18025478563</td></tr>
+            <tr><td>管辖区域:</td><td>成都 北京 上海</td></tr>
+            <tr><td>email:</td><td>122@qq.com</td></tr>
+            <tr><td>地址:</td><td>成都市青羊区宁夏街169号</td></tr>
+            <tr><td>头像:</td><td><img src="images/product_img/eyetest1.jpg" /></td></tr>
+            <tr><td>性别:</td><td>男</td></tr>
+        </table>
+    </form>
+</div>
+<!--end 详细信息层 -->
+</body>
+</html>

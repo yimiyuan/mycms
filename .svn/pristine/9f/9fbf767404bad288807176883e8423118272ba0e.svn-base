@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>用户详细信息</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/product_detail.css" />
+</head>
+<body>
+<!--go 详细信息层 -->
+<div class="product_detail">
+    <table>
+    	<tr><td colspan="2" class="center">用户详细信息</td></tr>
+        <tr><td class="td_110">用户名:</td><td>Jim lee</td></tr>
+        <tr><td>真实姓名:</td><td>李大刚</td></tr>
+        <tr><td>性别:</td><td>男</td></tr>
+        <tr><td>生日:</td><td>2000-01-01</td></tr>
+        <tr><td>email:</td><td>800@qq.com</td></tr>
+        <tr><td>qq号:</td><td>27154273</td></tr>
+        <tr><td>头像:</td><td><img class="photo" src="images/product_img/eyetest1.jpg" /></td></tr>
+        <tr><td>地址:</td><td>四川省成都市青羊区宁夏街22号</td></tr>
+        <tr><td>电话:</td><td>18521548527</td></tr>
+        <tr><td>最近登录时间:</td><td>2014-06-10</td></tr>
+    </table>
+</div>
+<!--end 详细信息层 -->
+</body>
+</html>

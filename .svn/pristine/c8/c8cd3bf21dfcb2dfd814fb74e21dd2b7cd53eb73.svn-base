@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>产品评论详情</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/product_detail.css" />
+</head>
+<body>
+<!--go 详细信息层 -->
+    <div class="product_detail">
+        <table>
+            <tr><td colspan="2" class="center">产品评论详情</td></tr>
+            <tr><td>商品名称:</td><td>OO眼保仪</td></tr>
+            <tr><td>评论人:</td><td>小刚</td></tr>
+            <tr><td>评论内容:</td><td><textarea style="width:620px;">评论内容</textarea></td></tr>
+            <tr><td>评价星级(1-5颗星):</td><td>5</td></tr>
+            <tr><td>满意度:</td><td>满意</td></tr>
+            <tr><td>评论日期:</td><td>2014-06-06</td></tr>
+        </table>
+	</div>
+<!--end 详细信息层 -->
+</body>
+</html>

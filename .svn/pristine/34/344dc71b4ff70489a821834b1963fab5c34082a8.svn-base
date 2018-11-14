@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>广告详细页</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/product_detail.css" />
+</head>
+<body>
+<!--go 详细信息层 -->
+    <div class="product_detail">
+        <table>
+            <tr><td colspan="2" class="center">广告详细信息</td></tr>
+            <tr><td>广告名称:</td><td>眼保仪广告</td></tr>             
+            <tr><td>提示文字:</td><td>最新眼保仪</td></tr>
+            <tr><td>图片缩略图:</td><td><img src="images/product_img/eyetest1.jpg" /></td></tr>
+            <tr><td>图片地址:</td><td>http://www.baidu.com/img/banner.jpg</td></tr>
+        </table>
+</div>
+<!--end 详细信息层 -->
+</body>
+</html>

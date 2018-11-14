@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>登陆页面</title>
+<link href="{{ $root }}public/admin/css/admin_login.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript">
+function sub(){
+	var myform = document.getElementById("userform");
+	myform.submit();
+}
+</script>
+</head>
+<body>
+<!-- start 后台登陆页面 -->
+<div class="admin_login">
+	<div class="login_left">
+    <form action="" method="post" id="userform">
+    	<div class="username"><input type="text" /></div>
+        <div class="password"><input type="password" /></div>
+        <div class="checkcode">
+ 			<div class="code_input"><input type="text" /></div>
+            <div class="code_img"><img src="images/checkcode.jpg" border="0"/></div>
+        </div>
+    </form>
+    </div>
+    <div class="login_right" onClick="sub();"></div>
+</div>
+<!-- end  后台登陆页面 -->
+</body>
+</html>
+

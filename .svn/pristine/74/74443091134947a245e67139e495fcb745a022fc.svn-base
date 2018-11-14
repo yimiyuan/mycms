@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>爱眼视频页面</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/show_product.css" />
+</head>
+<body>
+
+<!-------------go 右边内容主体层 ------------------>
+<div class="right_content">
+	<!---go 标题------>
+    <div class="user_nav">
+        <span class="your_pos">当前位置:</span>
+        <span>>&nbsp;爱眼视频管理</span>
+    </div>
+    <!---end 标题------>
+    <!---go 爱眼视频列表层------>
+    <div class="con_manager" id="con_manager">
+        <div class="show_product">
+        	<div class="search_box">
+            	<!---go 查询层------>
+                <div class="pro_search">
+                	<div>
+                        发布时间&nbsp;<input type="text" />
+                    </div>
+                    <div>
+                        标题&nbsp;<input type="text" />
+                    </div>
+                    <div><input class="short_bt" type="submit" value="查询"/></div>
+                </div>
+                 <!---end 查询层------>    
+                 <div class="pro_list">
+                    <table>
+                        <tr class="tr_title"><td class="td_300">爱眼视频标题</td><td>视频内容介绍</td><td class="td_110">发布时间</td><td class="td_110">操作</td></tr> 	
+                        <script type="text/javascript">		
+						for (var i=0;i<15;i++)
+						{
+							if(i%2==1)
+							{
+								document.write(
+								'<tr style="background:#DDD;"><td class="td_300">少儿近视多半为假性近视</td>'+
+                        '<td>如果看到一个3、4岁的小孩鼻梁上顶着一副眼镜，大多数人也不觉得奇怪，因为社会上，越来越多的小孩戴着眼镜</td>'+
+                        '<td class="td_110">2014-04-26</td>'+
+                        '<td class="td_110"><a href="video_detail.html">详细</a>'+
+                        '<a href="video_edit.html">编辑</a><a href="#">删除</a></td></tr> ');	
+							}
+							else
+							{
+								document.write(
+								'<tr><td class="td_300">少儿近视多半为假性近视</td>'+
+                        '<td>如果看到一个3、4岁的小孩鼻梁上顶着一副眼镜，大多数人也不觉得奇怪，因为s社会上，越来越多的小孩戴着眼镜</td>'+
+                        '<td class="td_110">2014-04-26</td>'+
+                        '<td class="td_110"><a href="video_detail.html">详细</a>'+
+                        '<a href="video_edit.html">编辑</a><a href="#">删除</a></td></tr> ');		
+							}	
+						}
+						</script>
+                        <tr><td colspan="10" class="page_search"><span>分页查询</span>
+                        <span><select id=""><option>1</option><option>2</option><option>3</option></select></span>
+                        <span><a href="#">前往</a></span></td></tr>
+                    </table>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <!---end 爱眼视频列表层------>
+</div>
+<!-------------go 右边内容主体层 ------------------>
+
+</body>
+</html>

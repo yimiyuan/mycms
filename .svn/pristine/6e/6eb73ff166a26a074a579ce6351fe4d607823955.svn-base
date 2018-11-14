@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>预约信息编辑</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/product_detail.css" />
+<style type="text/css">
+</style>
+</head>
+<body>
+<!--go 预约编辑层 -->                  
+    <div class="product_detail">
+    <form action="" method="post">
+         <table>
+            <tr><td colspan="2" class="center">预约信息编辑</td></tr>
+            <tr><td class="td_100">预约编号:</td><td><input class="width_200" type="text" value="500212154" /></td></tr>
+            <tr><td class="td_100">预约人:</td><td><input class="width_200" type="text" value="小强" /></td></tr>
+            <tr><td class="td_100">预约时间:</td><td><input class="width_200" type="text" value="2014-02-01" /></td></tr>
+            <tr><td class="td_100">预约状态:</td><td><input class="width_200" type="text" value="预约成功" /></td></tr>
+            <tr><td class="td_100">店铺图片:</td><td><img src="images/product_img/eyetest1.jpg" /><a href="#">删除</a></td></tr>
+            <tr><td class="td_100">上传店铺图片:</td><td><input type="file" class="file" value="浏览" /></td></tr>
+            <tr><td class="td_100"><input class="short_bt" type="submit" value="提交"/></td><td></td></tr>
+        </table>
+    </form>
+</div>
+<!--end  预约编辑层 -->
+</body>
+</html>

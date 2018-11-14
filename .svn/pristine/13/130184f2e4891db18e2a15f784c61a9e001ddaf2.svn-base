@@ -1,0 +1,32 @@
+<?php
+/**
+ * 初始化类
+ */
+
+namespace model;
+
+class Init{
+
+    /**
+     * @var array 初始化类数组
+     */
+    private static $_instance = array();
+    /**
+     * @var null 需要实例化的类
+     */
+    private static $class = null;
+
+    /**
+     * @param $class
+     * 实例化类,实例化空间为'model'下的类
+     */
+    public static function instance($class){
+        if(!isset(self::$_instance[$class])){
+            self::$class = '\model\\'.$class;
+            self::$_instance[$class] = new self::$class();
+        }
+        return self::$_instance[$class];
+    }
+
+
+}

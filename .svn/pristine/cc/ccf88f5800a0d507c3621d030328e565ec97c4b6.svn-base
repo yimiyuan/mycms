@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>查看产品相关信息</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/show_product.css" />
+</head>
+<body>
+<!------------- go 右边主体层 ------------------>
+<div class="right_content">
+	<!---go 标题------>
+    <div class="user_nav">
+        <span class="your_pos">当前位置:</span>
+        <span>>&nbsp;产品详细信息</span>
+    </div>
+    <!---end 标题------>
+    <!---go 列表层------>
+    <div class="con_manager" id="con_manager">
+        <div class="show_product">
+        	<div class="search_box">
+            	<!---go 查询层------>
+                <div class="pro_search">
+                	<div class="pro_brand">
+                        产品品牌&nbsp;
+                        <select id="">
+                            <option>-----请选择-----</option>
+                            <option>眼保品牌</option>
+                        </select>
+                    </div>
+                    <div class="pro_type">
+                        产品分类&nbsp;
+                        <select id="">
+                            <option>-----请选择-----</option>
+                            <option>眼保仪</option>
+                            <option>眼保灯</option>
+                        </select>
+                    </div>
+                    <div class="pro_name">
+                    	产品名称&nbsp;<input type="text" /> 
+                    </div>
+                    <div><input class="short_bt" type="submit" value="查询"/></div>
+                </div>
+                 <!---end 查询层------>    
+                 <div class="pro_list">
+                    <table>
+                        <tr class="tr_title"><td>商品编号</td><td>商品型号</td><td>商品名称</td><td>商品总数</td><td>销量</td><td>库存</td><td>原价</td>
+                        <td>促销价</td><td class="td_100">商品浏览次数</td>
+                        <td class="td_110">操作</td></tr>
+                        <!--
+                        <tr><td>0808008</td><td>SU-002</td><td>OO眼保仪</td><td>1000</td><td>200</td><td>800</td><td>250.00</td><td>200.00</td><td>50</td>
+                        <td><a class="p_detail" href="product_detail.html" >详细</a><a class="p_edit" href="product_edit.html" >编辑</a>
+                        <a class="p_del" href="#">删除</a></td></tr>
+                        -->
+                        <script type="text/javascript">
+						for (var i=0;i<15;i++)
+						{
+							if(i%2==1)
+							{
+								document.write('<tr><td>0808008</td><td>SU-002</td><td>OO眼保仪</td><td>1000</td><td>200</td><td>800</td><td>250.00</td>'+
+							'<td>200.00</td><td>50</td>'+
+                        '<td><a class="p_detail"  href="product_detail.html">详细</a><a class="p_edit" href="p_edit">编辑</a><a class="p_del" href="#">删除</a></td></tr>');	
+							}
+							else
+							{
+								document.write('<tr style="background:#eee;"><td>0808008</td><td>SU-002</td><td>OO眼保仪</td><td>1000</td><td>200</td>'+
+								'<td>800</td><td>250.00</td>'+
+							'<td>200.00</td><td>50</td>'+
+                        '<td><a class="p_detail" href="product_detail.html" >详细</a><a class="p_edit" href="product_edit.html" >编辑</a><a class="p_del" href="#">删除</a></td></tr>');
+							}	
+						}
+						</script>
+                        <tr><td colspan="10" class="page_search"><span>分页查询</span>
+                        <span><select id=""><option>1</option><option>2</option><option>3</option></select></span>
+                        <span><a href="#">前往</a></span></td></tr>
+                    </table>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <!---end 列表层----->
+</div>
+<!------------- end 右边主体层 ------------------>
+</body>
+</html>

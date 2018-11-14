@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>产品评论管理</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/show_product.css" />
+</head>
+<body>
+<!------------- go 右边主体层 ------------------>
+<div class="right_content">
+	<!---go 标题------>
+    <div class="user_nav">
+        <span class="your_pos">当前位置:</span>
+        <span>>&nbsp;产品评论管理</span>
+    </div>
+    <!---end 标题------>
+    <!---go 列表层------>
+    <div class="con_manager" id="con_manager">
+        <div class="show_product">
+        	<div class="search_box">
+            	<!---go 查询层------>
+                <div class="pro_search">
+                	<div class="pro_brand">
+                        评论人姓名&nbsp;<input type="text" /> 
+                    </div>
+                    <div class="pro_type">
+                        满意度&nbsp;
+                        <select id="">
+                            <option>-----请选择-----</option>
+                            <option>好评</option>
+                            <option>中评</option>
+                            <option>差评</option>
+                        </select>
+                    </div>
+                    <div class="pro_name">
+                    	评论时间&nbsp;<input type="text" /> 
+                    </div>
+                    <div><input class="short_bt" type="submit" value="查询"/></div>
+                </div>
+                 <!---end 查询层------>    
+                 <div class="pro_list">
+                    <table>
+                        <tr class="tr_title"><td>商品名称</td><td>评论人</td><td>评价星级(1-5颗星)</td><td>满意度</td><td>评论日期</td>
+                        <td class="td_110">操作</td></tr>
+                        <script type="text/javascript">
+						for (var i=0;i<15;i++)
+						{
+							if(i%2==1)
+							{
+								document.write('<tr style="background:#DDD;"><td>oo眼保仪</td><td>小刚</td><td>5</td><td>满意</td><td>2014-06-06</td>'+
+                        '<td><a class="p_detail"  href="product_comment_detail.html" >详细</a><a class="p_edit" href="product_comment_edit.html"  >编辑</a><a class="p_del" href="#">删除</a></td></tr>');	
+							}
+							else
+							{
+								document.write('<tr><td>oo眼保仪</td><td>小刚</td><td>5</td><td>满意</td><td>2014-06-06</td>'+
+                        '<td><a class="p_detail"  href="product_comment_detail.html" >详细</a><a class="p_edit" href="product_comment_edit.html"  >编辑</a><a class="p_del" href="#">删除</a></td></tr>');	
+							}	
+						}
+						</script>
+                        <tr><td colspan="10" class="page_search"><span>分页查询</span>
+                        <span><select id=""><option>1</option><option>2</option><option>3</option></select></span>
+                        <span><a href="#">前往</a></span></td></tr>
+                    </table>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <!---end 列表层----->
+</div>
+<!------------- end 右边主体层 ------------------>
+</body>
+</html>

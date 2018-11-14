@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>修改密码</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/update_userinfo.css" />
+<style type="text/css">
+td{height:30px;
+}
+td input{height:19px;
+}
+</style>
+</head>
+<body>
+<!-- go  密码修改-->
+<div class="right_content">
+    <div class="user_nav">
+        <span class="your_pos">当前位置:</span>
+        <span>>&nbsp;修改密码</span>
+    </div>
+    <div class="con_manager" id="con_manager">
+        <div class="show_userinfo">
+        	<form action="" method="post">
+                <table>
+                    <tr><td class="td_100">旧密码</td><td><input class="width_200" type="password" value=""/></td></tr>
+                    <tr><td class="td_100">新密码</td><td><input class="width_200" type="password" value=""/></td></tr>
+                    <tr><td class="td_100">重复密码</td><td><input class="width_200" type="password" value=""/></td></tr>
+                    <tr><td class="td_100"><input  class="short_bt" type="submit" value="提交"/></td><td></td></tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- end  密码修改-->
+</body>
+</html>

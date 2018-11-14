@@ -1,0 +1,18 @@
+/* ---------go 详细页面样式------------------ */
+.product_detail{margin-bottom:50px;
+}
+.product_detail table{width:100%;margin-top:5px;line-height:30px;
+}
+.product_detail table tr td{border-bottom:1px solid #aaa;padding-left:5px;
+}
+.product_detail table tr td img{width:250px;height:150px;margin-top:10px;margin-right:20px;
+}
+.product_detail table tr td img.photo{width:60px;height:60px;
+}
+.product_detail table tr td textarea{width:660px;height:100px;margin-top:10px;
+}
+.product_detail table tr td video{width:300px;height:150px;margin-top:20px;margin-right:20px;
+}
+.product_detail table tr td span.left_20{margin-left:20px;
+}
+/* ---------end 详细页面样式------------------ */

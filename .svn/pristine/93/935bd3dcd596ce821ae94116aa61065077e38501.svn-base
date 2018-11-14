@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>商家信息编辑</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/product_detail.css" />
+</head>
+<body>
+<!--go 详细信息编辑层 -->
+    <div class="product_detail">
+    <form action="" method="post">
+        <table>
+            <tr><td colspan="2" class="center">商家详细编辑</td></tr>
+            <tr><td>商家姓名:</td><td><input class="width_200" type="text" value="李得刚" /></td></tr>
+            <tr><td>联系方式:</td><td><input class="width_200" type="text" value="18025478563" /></td></tr>
+            <tr><td>管辖区域:</td><td><input class="width_200" type="text" value="成都 北京 上海" /></td></tr>
+            <tr><td>email:</td><td><input class="width_200" type="text" value="122@qq.com" /></td></tr>
+            <tr><td>地址:</td><td><input class="width_200" type="text" value="成都市青羊区宁夏街169号" /></td></tr>
+            <tr><td>头像:</td><td><img src="images/product_img/eyetest1.jpg" /></td></tr>
+            <tr><td>性别:</td><td><select><option>---请选择---</option><option>男</option><option>女</option></select></td></tr>
+            <tr><td><input class="short_bt" type="submit" value="提交"/></td><td></td></tr>
+        </table>
+    </form>
+</div>
+<!--end 详细信息编辑层 -->
+</body>
+</html>

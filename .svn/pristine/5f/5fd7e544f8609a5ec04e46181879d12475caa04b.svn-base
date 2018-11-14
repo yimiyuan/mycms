@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>店铺评论内容详情</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/product_detail.css" />
+</head>
+<body>
+<!--go 详细信息层 -->
+    <div class="product_detail">
+        <table>
+            <tr><td colspan="2" class="center">店铺评论内容详情</td></tr>
+            <tr><td>店铺名称:</td><td>福州国信大利嘉A1－107店</td></tr>
+            <tr><td>评论人:</td><td>小张</td></tr>
+            <tr><td>评论内容:</td><td><textarea>评论内容</textarea></td></tr>
+            <tr><td>评论日期:</td><td>2014-06-08</td></tr>  
+        </table>
+	</div>
+<!--end 详细信息层 -->
+</body>
+</html>

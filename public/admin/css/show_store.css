@@ -1,0 +1,27 @@
+/*-----------go 店铺页面样式----------------------------*/
+.show_store{background:#FFF;width:100%;border-bottom:1px solid #bbb;padding:2px;
+}
+.search_box{width:99%;min-height:500px;border:1px solid #bbb;
+}
+.store_search{border-bottom:1px solid #bbb;height:35px;width:100%;line-height:35px;background:#e9f2f4;
+}
+.store_search div{margin-left:27px;float:left;
+}
+
+.store_list{
+}
+.store_list table{
+}
+.store_list table tr td{
+}
+/*-----------end 店铺页面样式----------------------------*/
+
+/*-----------go 店铺详细页面样式----------------------------*/
+
+
+
+/*-----------end 店铺详细页面样式----------------------------*/
+
+/*-----------go 店铺编辑页面样式----------------------------*/
+
+/*-----------end 店铺编辑页面样式----------------------------*/

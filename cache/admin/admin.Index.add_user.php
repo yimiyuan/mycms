@@ -1,0 +1,82 @@
+<?php if (!defined('TOKEN_IN')) exit(); ?><!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>添加用户</title>
+<script type="text/javascript" src="<?php echo $this->vars["root"]; ?>/public/js/core.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo $this->vars["root"]; ?>/public/admin/css/common.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo $this->vars["root"]; ?>/public/admin/css/show_userinfo.css" />
+<style type="text/css">
+td{height:30px;
+}
+td input{height:19px;width:200px;
+}
+td input.button{width:50px;
+}
+</style>
+
+</head>
+<body>
+<!-- go 个人信息查看 -->
+<div class="right_content">
+    <div class="user_nav">
+        <span class="your_pos">当前位置:</span>
+        <span>>&nbsp;添加用户</span>
+    </div>
+    <div class="con_manager" id="con_manager">
+        <div class="show_userinfo">
+        	<form action="<?php echo $this->vars["root"]; ?>/index.php?r=admin/Index/addUser" method="post" id="form">
+                <table>
+                    <tr><td class="td_100">用户名</td><td><input type="text" name="username" id="username"/></td></tr>
+                    <tr><td class="td_100">密码</td><td><input type="password" name="password" id="password"/></td></tr>
+                    <tr><td class="td_100">重复密码</td><td><input type="password" name="repassword" id="repassword"/></td></tr>
+                    <tr><td class="td_100">真实姓名</td><td><input type="text" name="realname" id="realname"/></td></tr>
+                    <tr><td class="td_100">生日</td><td><input type="text" name="birth" id="birth"/></td></tr>
+                    <tr><td class="td_100">性别</td><td><select name="sex" id="sex"><option value="1">男</option><option value="0">女</option></select></td></tr>
+                    <tr><td class="td_100">E-mail</td><td><input type="text" name="email" id="email"/></td></tr>
+                    <tr><td class="td_100">联系电话</td><td><input type="text" name="phone" id="phone"/></td></tr>
+                    <tr><td class="td_100"><input class="short_bt" type="button" value="提交" onclick="addUser();"/></td><td></td></tr>
+                </table>
+           </form>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    function addUser(){
+        testmy();
+    }
+
+
+//    function addUser(){
+//        var username = getValue('username');
+//        getObject('form');
+//        alert(username);
+//        var password = getValue('password');
+//        var repassword = getValue('repassword');
+//        var phone = getValue('phone');
+//        if('' == username){
+//            alert('用户名不能为空');return;
+//        }
+//        if('' == password){
+//            alert('密码不能为空');return;
+//        }
+//        if('' == repassword){
+//            alert('重复密码不能为空');return;
+//        }
+//        if(repassword != password){
+//            alert('密码和重复密码必须相同');return;
+//        }
+//        if(phone == ''){
+//            alert('电话号码不能为空');return;
+//        }
+//        var form = getObject('form');
+//        form.submit();
+//    }
+
+
+</script>
+<!-- end 个人信息查看 -->
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>提示页面</title>
+<style type="text/css">
+.alert{margin:0 auto;width:500px;height:50px;
+}
+.img{float:left;
+}
+.text{float:left;margin-top:-5px;
+}
+h4{font-family:"微软雅黑";letter-spacing:0.3em;font-weight:200;color:#C33;
+}
+</style>
+</head>
+<body>
+
+<div class="alert">
+	<div class="img"><img src="images/alert.png" border="0"/></div>
+    <div class="text"><h4>对不起!操作有误或者没有相应的权限！</h4></div>
+</div>
+
+</body>
+</html>

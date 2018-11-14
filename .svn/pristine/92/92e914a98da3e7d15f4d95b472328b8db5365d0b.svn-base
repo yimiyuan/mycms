@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>修改收货地址</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/product_detail.css" />
+</head>
+<body>
+<!--go 修改信息层 -->
+<div class="product_edit product_detail">
+	<form action="" method="post">
+        <table>
+            <tr><td colspan="2" class="center">修改收货地址</td></tr>
+            <tr><td class="td_100">收货人姓名:</td><td><input class="width_200" type="text" value="李强" /></td></tr>
+            <tr><td>收货人地址:</td><td><input class="width_200" type="text" value="四川省成都市青羊区宁夏街111号" /></td></tr>
+            <tr><td>联系方式:</td><td><input class="width_200" type="text" value="15875874821" /></td></tr>
+            <tr><td>所在城市:</td><td><input class="width_200" type="text" value="成都市" /></td></tr>
+            <tr><td>所在区/县:</td><td><input class="width_200" type="text" value="青羊区" /></td></tr>
+            <tr><td>邮政编码:</td><td><input class="width_200" type="text" value="610041" /></td></tr>
+            <tr><td><input class="short_bt" type="submit" value="提交"/></td><td></td></tr>
+        </table>
+    </form>
+</div>
+<!--end 修改信息层 -->
+</body>
+</html>

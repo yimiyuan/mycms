@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>商品评论编辑</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/product_detail.css" />
+</head>
+<body>
+<!--go 修改信息层 -->
+<div class="product_edit product_detail">
+	<form action="" method="post">
+         <table>
+            <tr><td colspan="2" class="center">产品评论编辑</td></tr>
+            <tr><td>商品名称:</td><td><input class="width_200" type="text" value="OO眼保仪" /></td></tr>
+            <tr><td>评论人:</td><td><input class="width_200" type="text" value="小刚" /></td></tr>
+            <tr><td>评论内容:</td><td><textarea style="width:620px;">评论内容</textarea></td></tr>
+            <tr><td>评价星级(1-5颗星):</td><td><input class="width_200" type="text" value="5" /></td></tr>
+            <tr><td>满意度:</td><td><input class="width_200" type="text" value="满意" /></td></tr>
+            <tr><td>评论日期:</td><td><input class="width_200" type="text" value="2014-06-06" /></td></tr>
+            <tr><td><input class="short_bt" type="submit" value="提交"/></td><td></td></tr>
+        </table>
+    </form>
+</div>
+<!--end 修改详细层 -->
+</body>
+</html>

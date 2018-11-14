@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>店铺详细页</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/product_detail.css" />
+<link rel="stylesheet" type="text/css" href="css/show_store.css" />
+</head>
+<body>
+
+<!-----------go 店铺详细层--------------------------->
+<div class="store_detail product_detail">
+    <table>
+    	<tr><td colspan="2" class="center">店铺详细信息</td></tr>
+        <tr><td>店铺名称:</td><td>福州国信大利嘉A1－107店</td></tr>
+        <tr><td>店铺地址:</td><td>福州市台江区五一中路169号大利嘉城A1-107号</td></tr>
+        <tr><td>联系电话:</td><td>18025478296</td></tr>
+        <tr><td>店铺照片:</td><td><img src="images/store_img/store1.jpg" /></td></tr>
+        <tr><td>所在省份:</td><td>四川省</td></tr>
+        <tr><td>所在城市:</td><td>成都市</td></tr>
+        <tr><td>所在区/县:</td><td>青羊区</td></tr>
+        <tr><td>预约人数:</td><td>52人</td></tr>
+        <tr><td>评论条数:</td><td>95条评论</td></tr>
+        
+        <tr><td>预约须知:</td><td><textarea>
+        预约须知预约须知预约须知预约须知预约须知预约须知预约须知预约须知
+        预约须知预约须知预约须知预约须知预约须知预约须知预约须知预约须知
+        预约须知预约须知预约须知预约须知预约须知预约须知预约须知预约须知
+        预约须知预约须知预约须知预约须知预约须知预约须知预约须知预约须知
+        </textarea></td></tr>
+        
+        <tr><td>店铺简介:</td><td><textarea>
+        此店铺简介此店铺简介此店铺简介此店铺简介此店铺简介此店铺简介此店铺简介此店铺简介此店铺简介
+        此店铺简介此店铺简介此店铺简介此店铺简介此店铺简介此店铺简介此店铺简介此店铺简介此店铺简介
+        此店铺简介此店铺简介此店铺简介此店铺简介此店铺简介此店铺简介此店铺简介此店铺简介此店铺简介
+        此店铺简介此店铺简介此店铺简介此店铺简介此店铺简介此店铺简介此店铺简介此店铺简介此店铺简介
+        </textarea></td></tr>
+    </table>
+</div>
+
+<!-----------end 店铺详细层--------------------------->
+</body>
+</html>

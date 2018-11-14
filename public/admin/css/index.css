@@ -1,0 +1,83 @@
+/*-----------开始  index页面样式-----------*/
+
+/*---------------------go head----------------------------*/
+.header{background:#3a6ea5 url(../images/admin_img/h_bg.gif) repeat-x left bottom;height:80px;position:relative;
+}
+.header .logo {position:absolute;left:0;top:0;width:136px;height:80px;margin-right:10px;background:url(../images/admin_img/logo_1.gif) no-repeat;
+}
+.header .info{border:0px solid #F00;position:absolute;left:146px;top:20px;height:20px;width:80%;color:#FFF;
+}
+.header .info .info_left{float:left;
+}
+.header .info .info_right{float:right;
+}
+
+.header .nav{border:0px solid #F00;position:absolute;left:146px;bottom:0px;height:34px;width:100%;
+}
+.header .nav ul{
+}
+.header .nav ul li{float:left;background:url(../images/admin_img/nav_bg.png) left 0 no-repeat;padding-left:15px;
+}
+.header .nav ul li a{background: url(../images/admin_img/nav_bg.png) right 0 no-repeat;display: block;height: 34px;line-height: 38px;font-size: 14px;
+font-weight: 700;padding-right:15px;color:#FFF;
+}
+.header .nav ul li.hover{float:left;background:url(../images/admin_img/nav_bg.png) bottom left no-repeat;padding-left:15px;
+}
+.header .nav ul li.hover a{background: url(../images/admin_img/nav_bg.png) bottom right no-repeat;display: block;height: 34px;line-height: 38px;font-size: 14px;
+font-weight: 700;padding-right:15px;color:#367abb;
+}
+/*---------------------end head----------------------------*/
+.main{position:absolute;border:0px solid #000;top:80px;position:absolute;width:100%;bottom:0px;
+}
+/*---------------------go right_content----------------------------*/
+.main .right_content{border:0px solid #F00;margin-left:136px;height:100%;
+}
+.user_nav{border:0px solid #F00;height:30px;background:#E2E9EA url(../images/admin_img/icon_use.png) 10px -17px no-repeat;
+}
+.your_pos{border:0px solid #F00;display:inline-block;width:55px;height:20px;margin-left:30px;margin-top:10px;
+}
+.con_manager{border-top:1px solid #bbb;border-left:1px solid #bbb;height:100%;background:#FFF;position: relative;left: -2px;
+}
+/*---------------------end right_content----------------------------*/
+
+/*-----------结束  index页面样式-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

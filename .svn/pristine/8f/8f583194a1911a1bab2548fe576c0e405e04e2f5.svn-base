@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>爱眼知识详细</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/product_detail.css" />
+</head>
+<body>
+
+<!--go 详细信息层 -->
+<div class="product_detail">
+    <table>
+    	<tr><td colspan="2" class="center">爱眼知识详细信息</td></tr>
+        <tr><td>标题:</td><td>少儿近视多半为假性近视</td></tr>
+        <tr><td>发布日期:</td><td>2010-06-10</td></tr>
+        <tr><td>图片:</td><td><img src="images/product_img/eyetest1.jpg" /></td></tr>
+        <tr><td>内容:</td><td><textarea style="height:300px;">
+        如果看到一个3、4岁的小孩鼻梁上顶着一副眼镜，大多数人也不觉得奇怪，因为社会上，越来越多的小孩戴着眼镜，因为用眼过度，过多使用电子产品，使少儿的视力急速下降，但			
+        是，少儿近视多半为假性近视，所以，在发现假性近视时，应及时配合治疗，防止其演变为真性近视。
+　　假性近视，是由于用眼过度致使睫状肌持续收缩痉挛，晶状体厚度增加，视物模糊不清。从表面上看，假性近视也是看远模糊，看近清楚，但散瞳验光检查时又没有相应的屈光度改变。由于经常不正确的用眼，睫状肌持续收缩、痉挛，得不到应有的休息，晶状体也随之处于变厚的状态。这样
+        </textarea></td></tr>
+    </table>
+</div>
+<!--end 详细信息层 -->
+
+
+</body>
+</html>

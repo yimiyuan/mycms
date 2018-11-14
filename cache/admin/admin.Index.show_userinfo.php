@@ -1,0 +1,38 @@
+<?php if (!defined('TOKEN_IN')) exit(); ?><!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>查看个人信息</title>
+<link rel="stylesheet" type="text/css" href="<?php echo $this->vars["root"]; ?>/public/admin/css/common.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo $this->vars["root"]; ?>/public/admin/css/show_userinfo.css" />
+<style type="text/css">
+td{height:30px;
+}
+</style>
+</head>
+<body>
+<!-- go 个人信息查看 -->
+<div class="right_content">
+    <!---go 标题------>
+    <div class="user_nav">
+        <span class="your_pos"></span>
+        <span></span>
+    </div>
+    <!---end 标题------>
+    <div class="con_manager" id="con_manager">
+        <div class="show_userinfo">
+            <table>
+                <tr><td class="td_100">用户名</td><td><?php echo $this->vars['userInfo']['username'] ?></td></tr>
+                <tr><td class="td_100">真实姓名</td><td><?php echo $this->vars['userInfo']['realname'] ?></td></tr>
+                <tr><td class="td_100">头像</td><td><img src="<?php echo $this->vars["root"]; ?>/public/admin/images/product_img/eyetest1.jpg" width="50" height="50"/></td></tr>
+                <tr><td class="td_100">生日</td><td><?php echo $this->vars['userInfo']['birth'] ?></td></tr>
+                <tr><td class="td_100">性别</td><td><?php if($this->vars['userInfo']['sex'] == 0){echo '女';}else{echo '男';} ?></td></tr>
+                <tr><td class="td_100">E-mail</td><td><?php echo $this->vars['userInfo']['email'] ?></td></tr>
+                <tr><td class="td_100">联系电话</td><td><?php echo $this->vars['userInfo']['phone'] ?></td></tr>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- end 个人信息查看 -->
+</body>
+</html>

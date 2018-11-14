@@ -1,0 +1,157 @@
+<?php
+/**
+ * 模板类,负责编译html,替换变量
+ */
+namespace model;
+class Template{
+    /**
+     * @var array 模板变量
+     */
+    public $tpl_vars = array();
+    /**
+     * @var string 左定界符
+     */
+    public $left_delimiter = LEFT_DELIMITER;
+    /**
+     * @var string 右定界符
+     */
+    public $right_delimiter = RIGHT_DELIMITER;
+
+    /**
+     * @param $tpl_var
+     * @param null $value
+     * @return $this 模板赋值,目前只支持简单的变量,不支持数组
+     */
+    public function assign($tpl_var , $value = null){
+        if(is_array($tpl_var)){
+            foreach($tpl_var as $key => $val){
+                $this->tpl_vars[$key] = $val;
+            }
+        }else{
+            if($tpl_var != ''){
+                $this->tpl_vars[$tpl_var] = $value;
+            }
+        }
+        return $this->tpl_vars;
+    }
+
+    /**
+     * @param $view 显示视图
+     */
+    public function display($view){
+        $this->_getView($view);
+    }
+
+    /**
+     * @param $template 模板文件路径
+     * @return bool
+     * 功能: 模板编译,目前只支持简单变量,不支持数组;
+     */
+    public function _compile($template){
+        if(file_exists($template)){
+            /**
+             * $pattern数组依次匹配: 变量,if,elseif,else
+             */
+            $pattern = array(
+                '/'.$this->left_delimiter.'\s*\$([a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)\s*'.$this->right_delimiter.'/i',
+                '/'.$this->left_delimiter.'\s*if\s*(.+?)\s*'.$this->right_delimiter.'(.+?)'.$this->left_delimiter.'\s*\/if\s*'.$this->right_delimiter.'/is',
+                '/'.$this->left_delimiter.'\s*else\s*if\s*(.+?)\s*'.$this->right_delimiter.'/is',
+                '/'.$this->left_delimiter.'\s*else\s*'.$this->right_delimiter.'/is',
+            );
+            $replacement = '<?php echo $this->tpl_vars["${1}"]; ?>';
+            return preg_replace($pattern , $replacement , file_get_contents($template));
+        }else{
+            error_handler('view not exits : ' . $template);
+        }
+    }
+
+
+    /**
+     * 引入编译文件视图
+     */
+    public function _getView($view){
+        $viewInfo = $this->_getViewInfo($view);
+        $update = filemtime($viewInfo['html']);
+        if(file_exists($viewInfo['html'])){
+            echo $this->_getCacheFile().'<br>';
+            if(file_exists($this->_getCacheFile())){
+                if($update > $this->_getTime($viewInfo['key'])){
+                    $this->_setTime($viewInfo['key'] , $update);
+                    file_put_contents($viewInfo['php'] , $this->_compile($viewInfo['html']));
+                    include $viewInfo['php'];
+                }else{
+                    if(!file_exists($viewInfo['php'])){
+                        file_put_contents($viewInfo['php'] , $this->_compile($viewInfo['html']));
+                    }
+                    include $viewInfo['php'];
+                }
+            }else{
+                $this->_setTime($viewInfo['key'] , $update);
+            }
+        }else{
+            error_handler('view not exist : ' . $viewInfo['html']);
+        }
+    }
+
+
+    /**
+     * 得到文件更新日志文件
+     */
+    public function _getCacheFile(){
+        return CACHE . DS . TEMPLATE . DS . constant(strtoupper(TEMPLATE).'_TIME');
+    }
+
+    /**
+     * @param $key
+     * @param $time
+     * 功能: 保存html文件修改的时间值
+     */
+    public function _setTime($key , $time){
+        $cacheFile = $this->_getCacheFile();
+        if(file_exists($cacheFile)){
+            $array = json_decode(file_get_contents($cacheFile) , true);
+            $array[$key] = $time;
+            file_put_contents($cacheFile , json_encode($array));
+        }else{
+            file_put_contents($cacheFile , json_encode(array($key=>$time)));
+        }
+    }
+
+
+    /**
+     * @param $key
+     * @return mixed 返回文件修改的time值
+     */
+    public function _getTime($key){
+        $cacheFile = $this->_getCacheFile();
+        $array = array();
+        if(file_exists($cacheFile)){
+            $array = json_decode(file_get_contents($cacheFile) , true);
+            if(empty($array[$key])){
+                $array[$key] = 0;
+            }
+        }else{
+            error_handler('cache file not exists : ' . $cacheFile);
+        }
+        return $array[$key];
+    }
+
+    /**
+     * @param $view , 例如值为'Index.index'
+     * @return array 返回html文件和缓存php文件
+     * html值是html文件路径,php是php文件路径,key是保存html文件修改的时间key.
+     */
+    public function _getViewInfo($view){
+        $array = explode('.', $view);
+        if (sizeof($array) >= 2) {
+            $htmlFile = VIEW . DS . TEMPLATE . DS . $array[0] . DS . $array[1] . '.html';
+            $phpFile = CACHE . DS . TEMPLATE . DS . md5(TEMPLATE . VIEW) . '.php';
+        }else{
+            error_handler('view is not exist!');
+        }
+        return array('html' => $htmlFile, 'php' => $phpFile , 'key' => TEMPLATE . '_' . $array[0] . '_' . $array[1]);
+    }
+
+
+}
+

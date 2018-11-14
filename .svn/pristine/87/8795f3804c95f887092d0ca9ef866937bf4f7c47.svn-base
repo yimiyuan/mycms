@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>店铺信息</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/show_product.css" />
+<link rel="stylesheet" type="text/css" href="css/show_store.css" />
+</head>
+<body>
+
+<!------------- go 店铺显示页面 --------------------->
+<div class="right_content">
+	<!---go 标题------>
+    <div class="user_nav">
+        <span class="your_pos">当前位置:</span>
+        <span>>&nbsp;店铺详细信息</span>
+    </div>
+    <!---end 标题------>
+    
+    <!---go 店铺列表层------>
+    <div class="con_manager" id="con_manager">
+        <div class="show_store">
+        	<div class="search_box">
+            	<!---go 查询层------>
+                <div class="store_search">
+                	<div class="province">
+                        省份&nbsp;
+                        <select id="">
+                            <option>-----请选择-----</option>
+                            <option>四川省</option>
+                            <option>河北省</option>
+                        </select>
+                    </div>
+                    <div class="city">
+                        城市&nbsp;
+                        <select id="">
+                            <option>-----请选择-----</option>
+                            <option>成都市</option>
+                            <option>北京市</option>
+                        </select>
+                    </div>
+                    <div class="area">
+                    	区/县&nbsp;
+                        <select id="">
+                            <option>-----请选择-----</option>
+                            <option>成都市</option>
+                            <option>北京市</option>
+                        </select>
+                    </div>
+                    <div class="store_name">店铺名称&nbsp;&nbsp;<input type="text" /></div>
+                    <div><input class="short_bt" type="submit" value="查询"/></div>
+                </div>
+                 <!---end 查询层------>    
+                 
+                 <!---go 店铺列表----->    
+                 <div class="store_list pro_list">
+                    <table>
+                        <tr class="tr_title"><td>店铺名称</td><td>店铺地址</td><td>预约人数</td><td>评价条数</td><td>店铺电话</td><td class="td_110">操作</td></tr>
+                        <script type="text/javascript">
+						for (var i=0;i<20;i++)
+						{
+							if(i%2==1)
+							{
+								document.write('<tr style="background:#eee;"><td>福州国信大利嘉A1－107店</td><td>福州市台江区五一中路169号大利嘉城A1-107号</td>'+
+                        '<td>225</td><td>125</td><td>18028472676</td>'+
+                        '<td class="td_110"><a href="store_detail.html" >详情</a><a href="store_edit.html"  >编辑</a><a href="#">修改</a></td></tr>');	
+							}
+							else
+							{
+								document.write('<tr><td>福州国信大利嘉A1－107店</td><td>福州市台江区五一中路169号大利嘉城A1-107号</td>'+
+                        '<td>225</td><td>125</td><td>18028472676</td>'+
+                        '<td class="td_110"><a href="store_detail.html"  >详情</a><a href="store_edit.html" >编辑</a><a href="#">删除</a></td></tr>');
+							}	
+						}
+						</script>
+                        <tr><td colspan="10" class="page_search"><span>分页查询</span>
+                        <span><select id=""><option>1</option><option>2</option><option>3</option></select></span>
+                        <span><a href="#">前往</a></span></td></tr>
+                    </table>
+            	</div>
+                <!---end 店铺列表----->    
+            </div>
+        </div>
+    </div>
+    <!---go 店铺列表层------>
+</div>
+<!------------- end 店铺显示页面 -------------------->
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?php
+
+class A{
+    public function __construct(){
+        echo 'This is A class!<br>';
+    }
+}
+
+class B extends A{
+    public function __construct(){
+        parent::__construct();
+        echo 'This is B class <br>';
+    }
+    public function test(){
+        echo 'This is method test of B<br>';
+    }
+}
+
+$b = new B();
+$b->test();

@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>查看用户相关信息</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/show_product.css" />
+</head>
+<body>
+<!------------- go 右边主体层 ------------------>
+<div class="right_content">
+	<!---go 标题------>
+    <div class="user_nav">
+        <span class="your_pos">当前位置:</span>
+        <span>>&nbsp;用户详细信息</span>
+    </div>
+    <!---end 标题------>
+    <!---go 列表层------>
+    <div class="con_manager" id="con_manager">
+        <div class="show_product">
+        	<div class="search_box">
+            	<!---go 查询层------>
+                <div class="pro_search">
+                    <div class="pro_name">
+                    	用户名&nbsp;<input type="text" /> 
+                    </div>
+                    <div>
+                        性别&nbsp;
+                        <select id="" >
+                            <option>-----请选择-----</option>
+                            <option>男</option>
+                            <option>女</option>
+                        </select>
+                    </div>
+                    <div><input class="short_bt" type="submit" value="查询"/></div>
+                </div>
+                 <!---end 查询层------>    
+                 <div class="pro_list">
+                    <table>
+                        <tr class="tr_title"><td>用户名</td><td>真实姓名</td><td>性别</td><td>email</td><td>qq</td><td>电话</td><td>省份</td>
+                        <td>城市</td><td class="td_100">区/县</td>
+                        <td class="td_110">操作</td></tr>
+                        <script type="text/javascript">
+						for (var i=0;i<15;i++)
+						{
+							if(i%2==1)
+							{
+								document.write('<tr style="background:#eee;"><td>Jim lee</td><td>李大刚</td><td>男</td><td>123@qq.com</td><td>27542545</td><td>18245278526</td><td>四川省</td>'+
+							'<td>成都市</td><td>青羊区</td>'+
+                        '<td><a href="users_detail.html" >详细</a><a href="users_edit.html">编辑</a><a href="#">删除</a></td></tr>');	
+							}
+							else
+							{
+								document.write('<tr><td>Jim lee</td><td>李大刚</td><td>男</td><td>123@qq.com</td><td>27542545</td><td>18245278526</td><td>四川省</td>'+
+							'<td>成都市</td><td>青羊区</td>'+
+                        '<td><a href="users_detail.html" >详细</a><a href="users_edit.html" >编辑</a><a href="#">删除</a></td></tr>');	
+							}	
+						}
+						</script>
+                        <tr><td colspan="10" class="page_search"><span>分页查询</span>
+                        <span><select id=""><option>1</option><option>2</option><option>3</option></select></span>
+                        <span><a href="#">前往</a></span></td></tr>
+                    </table>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <!---end 列表层----->
+</div>
+<!------------- end 右边主体层 ------------------>
+</body>
+</html>

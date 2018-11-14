@@ -1,0 +1,62 @@
+<?php
+/**
+ * @author jimliu
+ * Date: 2017/7/21
+ * 功能: 引入公共类库
+ */
+require "constant.php";
+require "common.fun.php";
+load_class(MODEL);
+load_class(ADMIN);
+load_class(HOME);
+
+$router = router($_SERVER['SCRIPT_NAME'].@$_SERVER['PATH_INFO']);       //得到请求地址路由参数和请求参
+$allow = array('home' , 'admin');                                       //允许访问的模块
+if(!in_array($router['model'],$allow)){
+    error_handler('no promise to this block!');
+}
+defined('TEMPLATE') or define('TEMPLATE' , $router['model']);
+$controller = 'controller\\'.$router['model'].'\\'.$router['class'].'Controller';
+if(class_exists($controller, false)) {
+    $class = new $controller();
+    if(method_exists($class , $router['method'])){
+        call_user_func(array($class , $router['method']));
+    }else{
+        error_handler('method of ' . $router['method'] . ' not exists!');
+    }
+}else{
+    error_handler('class of ' . $router['class'] . ' not exists!');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

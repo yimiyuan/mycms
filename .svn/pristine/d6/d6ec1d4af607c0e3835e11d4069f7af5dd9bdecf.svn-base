@@ -1,0 +1,12 @@
+<?php
+/**
+ * 对外api接口的入口文件
+ */
+header("content-type:text/html;charset=utf-8");
+
+
+
+
+
+
+
